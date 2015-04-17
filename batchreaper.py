@@ -39,7 +39,8 @@ def batchreaper(input, output):
 
     for infile, f0, points in triplet:
         subprocess.call(["reaper", "-i", infile, "-f", f0, 
-                        "-p", points, "-m", "20"])
+                        "-p", points, "-m", "20",
+                        "-a"])
     
 if __name__ == '__main__':
     parser = setup_parser()
