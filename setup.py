@@ -4,15 +4,14 @@ def readme():
     with open('README.rst') as f:
         return f.read()
 
-setup(name='chunkup',
-      version='0.2',
-      description='chunks up audio',
+setup(name='batchreaper',
+      version='0.1',
+      description='runs reaper in batch',
       long_description = readme(),
-      url='https://github.com/JoFrhwld/chunkup',
+      url='https://github.com/JoFrhwld/batchreaper',
       author='Josef Fruehwald',
       author_email='jofrhwld@gmail.com',
       license='MIT',
-      packages=['chunkup'],
-      install_requires = ['pysox'],
-      scripts=['bin/chunkup'],
+      packages=['batchreaper'],
+      scripts=['bin/batchreaper'],
       zip_safe=False)
