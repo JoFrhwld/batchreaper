@@ -2,8 +2,6 @@ import os
 import glob
 import subprocess
 import argparse
-import chunkup
-
 
 class DirectoryException(Exception):
     '''Problem with output directory'''
